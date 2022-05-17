@@ -1,2 +1,2 @@
-# Kelemen Kevin
-# GaleriaProjekt
+# Nagy Domonkos Kristóf
+
