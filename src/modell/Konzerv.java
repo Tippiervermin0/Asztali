@@ -1,14 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package modell;
 
-/**
- *
- * @author vizsgaszf
- */
-public class Modell {
+
+public class Konzerv extends Elelmiszer{
+    String lejaras, receptajanlas;
+
+    public Konzerv(String nev, String gyarto, String datum) throws KonzervException {
+        super(nev, gyarto, datum);
+    }
+
+    public Konzerv(String lejaras, String nev, String gyarto, String datum) throws KonzervException {
+        super(nev, gyarto, datum);
+        this.lejaras = lejaras;
+    }
+
+    public Konzerv(String lejaras, String receptajanlas, String nev, String gyarto, String datum) throws KonzervException {
+        super(nev, gyarto, datum);
+        this.lejaras = lejaras;
+        this.receptajanlas = receptajanlas;
+    }
+
+    @Override
+    public String toString() {
+        return "Konzerv{" + "lejaras=" + lejaras + ", receptajanlas=" + receptajanlas + '}';
+    }
+
+  
+    
+    
+    
     
 }
